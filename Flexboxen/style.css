@@ -1,0 +1,23 @@
+.flex-container{
+    background: gray;
+    height: 80vh;
+  
+}
+
+.one{
+    background: lightblue;
+    font-size: 2em;
+    padding: 2em;
+}
+
+.two{
+    background: lightcoral;
+    font-size: 2em;
+    padding: 2em;
+}
+
+.three{
+    background: lightgreen;
+    font-size: 2em;
+    padding: 2em;
+}

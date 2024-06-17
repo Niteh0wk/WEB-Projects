@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Invoice Generator</title>
+</head>
+<body>
+<header>
+    <h1>Invoice Generator</h1>
+    <h2>Thanks for choosing Niteh0wkCorp, LLC!</h2>
+</header>
+<main>
+    <div class="main">
+        <div class="buttons">
+            <button id="washCar" onclick="addTask(1)">Wash Car: 10€</button>
+            <button id="mowLawn" onclick="addTask(2)">Mow Lawn: 20€</button>
+            <button id="pullWeeds" onclick="addTask(3)">Pull Weeds: 30€</button>
+        </div>
+        <div class="div1">
+            <p>Task</p>
+            <p>Total</p>
+        </div>
+        <div class="taskPriceList">
+            <ul id="taskList"></ul>
+            <ul id="priceList"></ul>
+        </div>
+        <div class="divider"></div>
+        <div class="div2">
+            <p>Notes</p>
+            <p>Total Amount</p>
+        </div>
+        <div class="div3">
+            <p id="note">We accept cash, credit card or PayPal</p>
+            <p class="totalAmount"><span id="totalAmount">0</span>€</p>
+        </div>
+        <button id="sendInvoice" onclick="location.reload()">Send Invoice</button>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,338 @@
+/* Mobile First */
+
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 2%;
+    border-style: dotted;
+    border-width: 5px;
+    border-radius: 15px;
+    border-color: orange;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+footer {
+    margin-top: 5%;
+    padding: 2%;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+}
+
+main::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("media/winkelgasse.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+h1 {
+    margin: 5% auto;
+    text-align: center;
+    padding: 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: orange;
+    width: 60%;
+    border-radius: 5px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-style: double;
+    border-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    border-width: 5px;
+    min-width: 20%;
+    max-width: 30%;
+    min-height: 25px;
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+header ul li:hover {
+    background-color: white;
+
+    a {
+        color: black;
+    }
+}
+
+header ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+#gallions {
+    font-size: 0.8rem;
+    background-color: black;
+    color: white;
+}
+
+.woods, .cores, .wands {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    gap: 20px;
+}
+
+#wands {
+    margin-bottom: 0;
+}
+
+main li {
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        border-style: solid;
+        border-radius: 50%;
+        border-color: black;
+        border-width: 3px;
+        margin: 0;
+    }
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    background-color: black;
+    color: white;
+    width: 70%;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 15px;
+    text-shadow: 3px 3px 3px rgba(255, 165, 0, 0.7);
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    background-color: orange;
+    width: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+h4 {
+    padding: 0;
+    margin: 0 5px;
+    background-color: black;
+    color: orange;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+}
+
+h5 {
+    text-align: center;
+    background-color: black;
+    width: 50%;
+    margin: 10px auto;
+    color: white;
+
+}
+
+.ollivander {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 30vw;
+        height: auto;
+        margin: 0 2%;
+        border-radius: 25%;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+        border-top: 0;
+        border-left: 0;
+        border-width: 5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .ollivander {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+p {
+    text-align: center;
+    color: white;
+    flex-wrap: wrap;
+    margin: 0 2%;
+    background-color: black;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    color: white;
+    margin: 0 auto;
+    border-radius: 15px;
+    border-style: solid;
+    font-size: 1.5rem;
+}
+
+.contact .radio, .muggle {
+    display: flex;
+    justify-content: center;
+}
+
+.contact h2 {
+    margin-bottom: 0;
+}
+
+.contact form {
+    padding: 5%;
+}
+
+.up{
+    text-decoration: none;
+    font-size: clamp(1.5rem, 1.301rem + 1.942vw, 2rem);
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 40%;
+    background-color: white;
+    border-radius: 50px;
+    height: 100px;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.up:hover{
+    opacity: 100%;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 576px) {
+
+    header {
+        border-width: 8px;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    header ul{
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        width: 50%;
+    }
+
+    h3{
+        font-size: 2rem;
+        width: 30%;
+    }
+
+    #gallions {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        margin: 2%;
+    }
+
+    h5 {
+        font-size: 1rem;
+        margin-bottom: 5%;
+    }
+
+    img {
+        display: block;
+        width: 200px;
+        height: 200px;
+    }
+
+    p{
+        font-size: 1.7rem;
+    }
+
+    .contact{
+        width: 30%;
+    }
+
+    .contact h2 {
+        width: 80%;
+    }
+}
+
+@media screen and (min-height: 1080px) {
+
+    .contact{
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    form {
+        padding: 5%;
+    }
+}

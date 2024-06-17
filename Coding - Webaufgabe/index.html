@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+<header>
+    <h1 id="up">Philipp Gerstl</h1>
+    <nav>
+        <ul>
+            <li><a href="#career">Career</a></li>
+            <li><a href="#motivation">Motivation</a></li>
+            <li><a href="#freetime">Free-time</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2 class="selfie"><img src="selfie.jpg" alt="Picture of Philipp"></h2>
+        <section>
+            <h3>About myself:</h3>
+            <p>
+                My name is Philpp Gerstl. I am 21 years of age and I live in Kirchberg ob der Donau which lies in the
+                beautiful Mühlviertel. I've been living there since 2009 since we had to move away from Linz because I
+                have 4 siblings (2 pairs of twins) and my, at that time single, mum couldn't afford a flat in Linz. My
+                family and I love cats, and we pretty much had at least 1-4 cats ever since we moved. 1 Year ago I got
+                my license and my grandma gifted me her old car, which is a 2005 Golf 4 420.000 km on it, but still
+                drives like a charm.
+            </p>
+        </section>
+    </article>
+    <article class="reverse">
+        <h2><img src="pc.png" alt="pc picture"></h2>
+        <section>
+            <h3 id="motivation">Motivation for IT:</h3>
+            <p>
+                I've been interested in IT pretty much since middleschool. I always loved to fiddle around with
+                computer, whether I build them or switched out broken parts, I just loved doing some on-hand work. It
+                has been a dream for a while to get a job in IT, but never really had the chance to. Thankfully because
+                of my unemployment and an AMS-Course I got the opportunity to come to Codersbay and learn how to code,
+                which I had no idea of beforehand. So basically my motivation is to one day help people with website or
+                app needs, to make their Imagination a reality.
+            </p>
+        </section>
+    </article>
+    <article>
+        <h2 class="serum"><img src="serum.png" alt="serum vst" ></h2>
+        <section>
+            <h3 id="freetime">Free-time/Interests</h3>
+            <p>
+                In my free-time I love to play video games such as Shooters, Puzzle games or some silly and fun Koop
+                games
+                with my friends. Music is also a big passion of mine. I went to a music-middleschool where I learnt a
+                lot
+                about music theory and simply how music works. So every now and then if I have any ideas I like to
+                produce
+                music with FL-Studio. My favorite genre to produce is Drum and Bass because I simply just love this
+                genre.
+                It is filled with emotion, passion and drive. The music also brings so many people together who love to
+                enjoy some bangers. When I have the financial ability I also love to upgrade my home pc-setup since
+                parts
+                and peripherals improve a lot over time, so I somewhat like to stay up-to-date.
+            </p>
+        </section>
+    </article>
+    <article>
+        <section>
+            <h3 id="projects">Projects:</h3>
+            <p>
+                Since I've only been in codersbay for 3 weeks I don't really have any projects, but here are some
+                examples
+                of what we did so far:
+            </p>
+            <div class="projects">
+                <img src="project1.png" alt="Picture1">
+                <img src="project2.png" alt="Picture2">
+                <img src="project3.png" alt="Picture3">
+            </div>
+        </section>
+    </article>
+
+        <a href="lebenslauf.pdf" id="career" class="career">Career</a>
+
+</main>
+
+<footer>
+    <article>
+        <form id="contact">
+            <div>
+                <label for="private"><input type="radio" name="selection" id="private">Private</label>
+            </div>
+            <div>
+                <label for="company"><input type="radio" name="selection" id="company">Company</label>
+            </div>
+            <div>
+                <label for="name">First name:</label>
+                <input type="text" name="name" id="name" placeholder="Type in name...">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Type in email...">
+            </div>
+            <div>
+                <label for="message">Leave a message:</label>
+                <textarea name="message" id="message" cols="20" rows="2" placeholder="Type message here..."></textarea>
+            </div>
+            <input type="submit">
+        </form>
+    </article>
+    <a href="#up" class="up"><img src="up.png" alt="up"></a>
+</footer>
+</body>
+</html>

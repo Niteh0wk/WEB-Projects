@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Übung1</title>
+</head>
+<body>
+<header>
+    <h1 class="headline">Twenty Øne Pilots</h1>
+    <nav>
+        <ul class="navigation">
+            <li><a target="_blank" href="https://de.wikipedia.org/wiki/Twenty_One_Pilots">Wiki</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a target="_blank" href="https://store.twentyonepilots.com/">Shop</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="index">
+    <article>
+        <h2>Tyler Joseph</h2>
+        <img src="media/tyler.jpg"
+             alt="Picture of Tyler Joseph">
+        <section class="textSection">
+            <h3>About Tyler:</h3>
+            <p>
+                Tyler Robert Joseph (born December 1, 1988) is an American singer, rapper, musician songwriter, and record producer. He is best known as the frontman for the musical duo <dfn class="tooltip">Twenty One Pilots <span class="tooltiptext">TwentyOnePilots was founded in 2009</span></dfn>, alongside bandmate Josh Dun. Across his career he has recorded eight albums: one solo, and seven with Twenty One Pilots. He has been nominated for six Grammy Awards as a member of the duo, of which he has won one.
+            </p>
+        </section>
+    </article>
+    <article>
+        <h2>Josh Dun</h2>
+        <img src="media/josh.jpg" alt="Picture of Josh Dun">
+        <section class="textSection">
+            <h3>About Josh:</h3>
+            <p>
+                Joshua William Dun (born June 18, 1988) is an American musician. He is best known as the drummer of the musical duo Twenty One Pilots, alongside Tyler Joseph, but he has collaborated with other artists as well. His band has been nominated for six Grammy Awards, of which he has won one.
+            </p>
+        </section>
+    </article>
+
+</main>
+<footer>
+
+    <!-- contact form -->
+
+    <article class="contact">
+        <form id="contact">
+            <div>
+                <label for="private"><input type="radio" name="selection" id="private">Private</label>
+            </div>
+            <div>
+                <label for="company"><input type="radio" name="selection" id="company">Company</label>
+            </div>
+            <div>
+                <label for="name">First name:</label>
+                <input type="text" name="name" id="name" placeholder="Type in name...">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Type in email...">
+            </div>
+            <div>
+                <label for="message">Leave a message:</label>
+                <textarea name="message" id="message" cols="20" rows="2" placeholder="Type message here..."></textarea>
+            </div>
+            <input type="submit">
+        </form>
+    </article>
+</footer>
+<figure>
+    <audio autoplay loop src="media/audio.wav"></audio>
+</figure>
+
+</body>
+</html>

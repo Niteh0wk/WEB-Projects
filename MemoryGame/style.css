@@ -1,0 +1,171 @@
+/* Mobile First */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1F2937;
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    background-color: #4C1D95;
+    margin-bottom: 5%;
+    padding: 3%;
+}
+
+h1, h2 {
+    font-family: Bahnschrift, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.memory-game {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(6, 1fr);
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 7px #4C1D95;
+    padding: 1%;
+}
+
+
+.memory-card {
+    position: relative;
+    width: 112px;
+    height: 140px;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.3s;
+}
+
+
+.memory-card img {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px black;
+}
+
+.memory-card .back-side {
+    transform: rotateY(180deg);
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 1000;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.youWon {
+    font-size: 2rem;
+}
+
+h3 {
+    color: white;
+    font-family: Bahnschrift, sans-serif;
+    text-align: center;
+    margin-top: 3%;
+    animation-name: blinkingTime;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinkingTime {
+    0% {color: white}
+    50% {color: #919191}
+    100% {color: white}
+}
+
+.playAgain {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4C1D95;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 #000;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    font-family: "Arial Black", serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.playAgain:hover {
+    background-color: #fff;
+    color: #4C1D95;
+    border: 2px solid #4C1D95;
+    box-shadow: 5px 5px 0 #4C1D95;
+}
+
+.playAgain:active {
+    background-color: #4C1D95;
+    color: white;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+footer {
+    background-color: #4C1D95;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+@media screen and (min-width: 576px) {
+    .memory-game {
+        grid-template-columns: repeat(6, 2fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 3%;
+    }
+
+    .memory-card {
+        width: 160px;
+        height: 200px;
+        margin: 10px;
+    }
+
+    h1, h2 {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ollivanders Wands</title>
+</head>
+<body>
+<header id="up">
+    <h1>Ollivanders Wands</h1>
+    <ul>
+        <li><a href="#woods">Woods</a></li>
+        <li><a href="#cores">Cores</a></li>
+        <li><a href="#wands">Wands</a></li>
+        <li><a href="#garrick">Garrick Ollivander</a></li>
+    </ul>
+</header>
+<main>
+    <div>
+        <h2>Available Materials</h2>
+    </div>
+    <div>
+        <h3 id="woods">Woods</h3>
+        <ul class="woods">
+            <li><h4>Elder</h4><img src="media/woods/elder.jpg" alt="Elder"></li>
+            <li><h4>Walnut</h4><img src="media/woods/walnut.jpg" alt="Walnut"></li>
+            <li><h4>Ash</h4><img src="media/woods/ash.jpg" alt="Ash"></li>
+            <li><h4>Birch</h4><img src="media/woods/birch.jpg" alt="Birch"></li>
+            <li><h4>Hawthorn</h4><img src="media/woods/hawthorn.jpg" alt="Hawthorn"></li>
+            <li><h4>Rosewood</h4><img src="media/woods/rosewood.jpg" alt="Rosewood"></li>
+            <li><h4>Holly</h4><img src="media/woods/holly.jpg" alt="Holly"></li>
+            <li><h4>Vine</h4><img src="media/woods/vine.jpg" alt="Vine"></li>
+            <li><h4>Elm</h4><img src="media/woods/elm.jpg" alt="Elm"></li>
+            <li><h4>Yew</h4><img src="media/woods/yew.jpg" alt="Yew"></li>
+        </ul>
+        <h3 id="cores">Cores</h3>
+        <ul class="cores">
+            <li><h4>Thestral Tailhair</h4><img src="media/cores/thestral.png" alt="Thestral"></li>
+            <li><h4>Dragon Heartstring</h4><img src="media/cores/dragon.jpg" alt="Dragon"></li>
+            <li><h4>Unicorn Hair</h4><img src="media/cores/unicorn.png" alt="Unicorn"></li>
+            <li><h4>Veela Hair</h4><img src="media/cores/veela.jpg" alt="Vella"></li>
+            <li><h4>Phoenix Feather</h4><img src="media/cores/phoenixfeather.jpg" alt="Phoenix Feather"></li>
+        </ul>
+    </div>
+    <article>
+        <h2 id="wands">Available Wands</h2>
+        <h3 id="gallions">All Prices are 7 Gallions</h3>
+        <ul class="wands">
+            <li><h4>Elderwand</h4><img src="media/wands/elderwand.jpg" alt="Elderwand"></li>
+            <li><h4>Harry's Wand</h4><img src="media/wands/harrywand.jpg" alt="Harry's Wand"></li>
+            <li><h4>Voldemort's Wand</h4><img src="media/wands/voldemortwand.jpg" alt="Voldemort's Wand"></li>
+        </ul>
+    </article>
+    <h2 id="garrick">Garrick Ollivander</h2>
+    <article class="ollivander">
+        <img src="media/ollivander.jpg" alt="Ollivander">
+        <p>
+            Garrick Ollivander (b. 25 September pre-1909) was a half-blood wizard who was the proprietor of Ollivanders in Diagon Alley during most of the 20th century. Ollivander was widely considered the best wandmaker in the world, and many wizards and witches bought their wands from him. In 1996, Ollivander was captured and tortured by Lord Voldemort. He was rescued in 1998 by Harry Potter, Ron Weasley, Hermione Granger, and Dobby. After he was rescued, he imparted important information regarding wandlore to Harry, helping Harry in his understanding of the Deathly Hallows.
+        </p>
+    </article>
+</main>
+<footer>
+    <article class="contact">
+        <h2>Contact Form</h2>
+        <form id="contact">
+            <div class="muggle">
+                <label for="muggle"><input type="checkbox" name="muggle" id="muggle">I am not a muggle!</label>
+            </div>
+            <div class="radio">
+                <label for="private"><input type="radio" name="selection" id="private">Private</label>
+            </div>
+            <div class="radio">
+                <label for="company"><input type="radio" name="selection" id="company">Company</label>
+            </div>
+            <div>
+                <label for="name">First name:</label>
+                <input type="text" name="name" id="name" placeholder="Type in name...">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Type in email...">
+            </div>
+            <div>
+                <label for="message">Leave a message:</label>
+                <textarea name="message" id="message" cols="20" rows="2" placeholder="Type message here..."></textarea>
+            </div>
+            <input type="submit">
+        </form>
+    </article>
+
+    <a href="#up" class="up"><img src="media/up.png" alt="up"></a>
+</footer>
+</body>
+</html>

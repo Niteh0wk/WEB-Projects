@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="myFunction.js"></script>
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+</head>
+<body>
+<header>
+    <h1>G-TRAVEL</h1>
+
+    <div class="topnav">
+        <a href="index.html" class="active"><span class="material-symbols-outlined">home</span></a>
+        <ul id="myLinks">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</header>
+<h2 class="contactHeadline">Contact Form</h2>
+<div class="divider">
+    <div class="dot"></div>
+    <div class="line"></div>
+    <div class="dot"></div>
+</div>
+<main class="contactMain">
+    <div class="form">
+        <form>
+            <div class="gender">
+                <label for="gender" class="contactLabel">Gender</label><select name="gender" id="gender">
+                    <option value="choose">-Gender-</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="diverse">Diverse</option>
+                </select>
+            </div>
+            <div class="nameMailBlock">
+                <label for="name" class="contactLabel">Name</label><input type="text" name="name" id="name" placeholder="First Name">
+                <label for="email" class="contactLabel">Email</label><input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="message">
+                <label for="message" class="contactLabel">Message</label><textarea name="message" id="message" placeholder="Type Message..."></textarea>
+            </div>
+            <div class="submit">
+            <input type="submit" id="submit">
+            </div>
+        </form>
+    </div>
+    <h2 class="contactHeadline" id="phoneNumber">Telephone: +4367761178649</h2>
+</main>
+<footer>
+    <div class="footerLinks">
+        <a href="https://www.instagram.com/philippgerstl2" target="_blank"><img src="media/instagramlogo.png" alt="Instagram"class="social"></a>
+        <a href="twitter.com/niteh0wk" target="_blank"><img src="media/twitterlogo.png" alt="Twitter" class="social"></a>
+        <a href="https://www.facebook.com/philipp.gerstl.35/" target="_blank"><img src="media/facebooklogo.png" alt="Facebook"class="social"></a>
+    </div>
+</footer>
+</body>
+</html>

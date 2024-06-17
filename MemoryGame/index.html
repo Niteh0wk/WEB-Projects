@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>MemoryGame</title>
+</head>
+<body>
+<header>
+    <h1>Welcome to my Memory Game</h1>
+    <h2>Programmed by Niteh0wk</h2>
+</header>
+<main>
+    <section class="memory-game">
+        <div class="memory-card">
+            <!--Value 1-->
+            <img class="back-side" src="media/value1.png" alt="frontside" data-card-id="1" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 1-->
+            <img class="back-side" src="media/value1.png" alt="frontside" data-card-id="1" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 2-->
+            <img class="back-side" src="media/value2.png" alt="frontside" data-card-id="2" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 2-->
+            <img class="back-side" src="media/value2.png" alt="frontside" data-card-id="2" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 3-->
+            <img class="back-side" src="media/value3.png" alt="frontside" data-card-id="3" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 3-->
+            <img class="back-side" src="media/value3.png" alt="frontside" data-card-id="3" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 4-->
+            <img class="back-side" src="media/value4.png" alt="frontside" data-card-id="4" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 4-->
+            <img class="back-side" src="media/value4.png" alt="frontside" data-card-id="4" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 5-->
+            <img class="back-side" src="media/value5.png" alt="frontside" data-card-id="5" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 5-->
+            <img class="back-side" src="media/value5.png" alt="frontside" data-card-id="5" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 6-->
+            <img class="back-side" src="media/value6.png" alt="frontside" data-card-id="6" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 6-->
+            <img class="back-side" src="media/value6.png" alt="frontside" data-card-id="6" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 7-->
+            <img class="back-side" src="media/value7.png" alt="frontside" data-card-id="7" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 7-->
+            <img class="back-side" src="media/value7.png" alt="frontside" data-card-id="7" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 8-->
+            <img class="back-side" src="media/value8.png" alt="frontside" data-card-id="8" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 8-->
+            <img class="back-side" src="media/value8.png" alt="frontside" data-card-id="8" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 9-->
+            <img class="back-side" src="media/value9.png" alt="frontside" data-card-id="9" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+        <div class="memory-card">
+            <!--Value 9-->
+            <img class="back-side" src="media/value9.png" alt="frontside" data-card-id="9" draggable="false">
+            <img class="front-side" src="media/memorycardback.png" alt="backside" draggable="false">
+        </div>
+    </section>
+    <div id="game-over" class="popup">
+        <h2 class="youWon">Congratulations! You won!</h2>
+        <h3>It took you:</h3>
+        <button onclick="restartGame()" class="playAgain">Play Again</button>
+    </div>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>

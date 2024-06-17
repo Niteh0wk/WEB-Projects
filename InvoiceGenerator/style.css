@@ -1,0 +1,250 @@
+html {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1F2937;
+}
+
+header {
+    background-color: #4C1D95;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Bahnschrift, serif;
+    padding: 50px;
+}
+
+h1 {
+    margin: 0 auto;
+    font-size: 3rem;
+}
+
+h2 {
+    margin: 0 auto;
+    font-size: 1rem;
+
+}
+
+main {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    font-family: "Arial Black", serif;
+
+}
+
+.main {
+    width: 95%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#washCar, #mowLawn, #pullWeeds {
+    font-family: Bahnschrift, serif;
+    font-weight: bold;
+
+}
+
+/*----------------------------------------Button Animation from Uiverse-----------------------------------------------*/
+#washCar, #mowLawn, #pullWeeds {
+    align-items: center;
+    appearance: none;
+    background-color: #C3C6DB;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px, rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #7f7f91 0 -3px 0 inset;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: Bahnschrift, monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 13px;
+}
+
+#washCar:focus, #mowLawn:focus, #pullWeeds:focus {
+    box-shadow: #D6D6E7 0 0 0 2px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+#washCar:hover, #mowLawn:hover, #pullWeeds:hover {
+    box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+#washCar:active, #mowLawn:active, #pullWeeds:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.div1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+
+    p {
+        margin: 0;
+    }
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    font-family: Bahnschrift, serif;
+    font-style: italic;
+    width: 60%;
+    li {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+}
+
+#priceList {
+    list-style: none;
+    padding: 0;
+    font-style: italic;
+    margin-right: 2%;
+}
+
+.taskPriceList {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.divider {
+    background-color: #C3C6DB;
+    height: 3px;
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.div2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.div3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#totalAmount {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#note {
+    font-size: 0.6rem;
+    font-family: Bahnschrift, serif;
+    font-style: italic;
+    margin: 0;
+}
+
+/*----------------------------------------Remove Button---------------------------------------------------------------*/
+
+.remove-btn {
+    color: white;
+    font-style: italic;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-left: 3%;
+    cursor: pointer;
+    background-color: #4C1D95;
+    box-shadow: 2px 2px 0 black;
+    border-style: none;
+}
+
+/*----------------------------------------Button Animation from Uiverse-----------------------------------------------*/
+
+#sendInvoice {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4C1D95;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 #000;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    font-family: "Arial Black", serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#sendInvoice:hover {
+    background-color: #fff;
+    color: #4C1D95;
+    border: 2px solid #4C1D95;
+    box-shadow: 5px 5px 0 #4C1D95;
+}
+
+#sendInvoice:active {
+    background-color: #4C1D95;
+    color: white;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 576px) {
+
+    .main {
+        width: 60%;
+    }
+
+    #washCar, #mowLawn, #pullWeeds {
+        font-size: 18px;
+        padding: 35px;
+    }
+
+    #note {
+        font-size: 1rem;
+    }
+
+    li {
+        margin-top: 16px;
+    }
+
+    .remove-btn {
+        height: 25px;
+    }
+}

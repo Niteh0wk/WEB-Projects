@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gallery</title>
+</head>
+<body>
+<header>
+    <h1 class="headline">Gallery</h1>
+    <nav>
+        <ul class="navigation">
+            <li class="navigationButtons"><a target="_blank"
+                                             href="https://de.wikipedia.org/wiki/Twenty_One_Pilots">Wiki</a></li>
+            <li class="navigationButtons"><a href="index.html">Home</a></li>
+            <li class="navigationButtons"><a target="_blank" href="https://store.twentyonepilots.com/">Shop</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="gallery">
+    <article class="photoAlbum">
+        <h2>Some pictures of them</h2>
+        <img src="media/pic1.jpg" alt="Picture of tyler and josh">
+        <img src="media/pic2.jpg" alt="Picture of tyler and josh">
+        <img src="media/pic3.jpg" alt="Picture of tyler and josh">
+        <img src="media/pic4.jpg" alt="Picture of tyler and josh">
+    </article>
+    <div class="youtubeVideo">
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/53tgVlXBZVg"
+                title="Twenty One Pilots - Overcompensate (Official Video)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div>
+        <video autoplay muted src="media/video.mp4"></video>
+    </div>
+    <section>
+        <h2>Some of their Songs</h2>
+        <ul class="trackList">
+            <li><a href="https://open.spotify.com/intl-de/track/4PCD9jZRM2VswisaTBhc25?si=fac0327da4714baa"
+                   target="_blank">Next Semester</a></li>
+            <li><a href="https://open.spotify.com/intl-de/track/60dwJ8dnqZ4WrIdiu7LkNR?si=64ebbe9ea48b48b9"
+                   target="_blank">Saturday</a></li>
+            <li><a href="https://open.spotify.com/intl-de/track/0wEGo9LsSrSUz9HOtraWAO?si=c9589d44a3514f58"
+                   target="_blank">Overcompensate</a></li>
+        </ul>
+    </section>
+</main>
+<footer>
+
+    <!-- contact form -->
+
+    <article class="contact">
+        <h2>Contact Form</h2>
+        <form id="contact">
+            <div>
+                <label for="private"><input type="radio" name="selection" id="private">Private</label>
+            </div>
+            <div>
+                <label for="company"><input type="radio" name="selection" id="company">Company</label>
+            </div>
+            <div>
+                <label for="name">First name:</label>
+                <input type="text" name="name" id="name" placeholder="Type in name...">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Type in email...">
+            </div>
+            <div>
+                <label for="message">Leave a message:</label>
+                <textarea name="message" id="message" cols="20" rows="2" placeholder="Type message here..."></textarea>
+            </div>
+            <input type="submit">
+        </form>
+    </article>
+</footer>
+</body>
+</html>

@@ -1,0 +1,590 @@
+/* Predefined variables */
+
+:root {
+    --font-s-h1: 3rem;
+    --font-s-h2: 2.5rem;
+    --font-s-3: 1.5rem;
+    --bg-white: white;
+    --bg-black: black;
+    --white-font: white;
+    --black-font: black;
+}
+
+
+/*Mobile First*/
+
+html {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*headlines*/
+
+h1 {
+    font-family: "Bahnschrift", sans-serif;
+}
+
+h1:first-letter {
+    background-color: var(--bg-black);
+    color: var(--white-font);
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10%;
+    margin: 5px;
+}
+
+h2::before {
+    content: 'flight';
+    font-family: 'Material Symbols Outlined';
+}
+
+h2 {
+    font-family: "Arial Black", sans-serif;
+    color: var(--white-font);
+    width: 80%;
+    text-align: center;
+    align-self: center;
+}
+
+.contactHeadline {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #0b1f32;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 3px 5px black;
+}
+
+/*header*/
+
+header {
+    display: flex;
+    padding-bottom: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    width: 200px;
+    height: 100%;
+
+    ul li {
+        list-style: none;
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            position: relative;
+        }
+    }
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 5%;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: gray;
+    color: white;
+    height: 100%;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 5% auto;
+
+    .dot {
+        margin: 0;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        border-radius: 50%;
+        height: 5px;
+        width: 5px;
+        background-color: var(--bg-black);
+    }
+
+    .line {
+        margin: 0;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        width: 80%;
+        height: 2px;
+        background-color: var(--bg-black);
+    }
+
+}
+
+/*main*/
+
+main {
+    padding: 5%;
+}
+
+.flyingPlane {
+    height: 50px;
+    width: 90%;
+    display: flex;
+    margin: 0 auto 5%;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    border-style: dotted;
+    border-width: 10px;
+    animation-name: blinking;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    .plane {
+        content: 'flight';
+        font-family: 'Material Symbols Outlined';
+        color: white;
+        font-size: 40px;
+        rotate: 90deg;
+        position: relative;
+        animation-name: flying;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes flying {
+    0% {left: -5%}
+    100% {left: 100%}
+}
+
+@keyframes blinking {
+    0% {border-color: black}
+    50% {border-color: yellow}
+    100% {border-color: black}
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg-black);
+    color: var(--white-font);
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.price {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-10%, -10%);
+    background-color: var(--bg-black);
+    color: var(--white-font);
+    padding: 5px 5px;
+    font-size: 1rem;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 0 15px 0 15px;
+}
+
+.picturesWithText {
+    padding: 2%;
+    width: auto;
+    display: grid;
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    ". . "
+    ". . "
+    ". . ";
+}
+
+.explore, .destinations, .offers, .morePhotos {
+    background-color: #0b1f32;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 3px 5px black;
+}
+
+.pictureGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .image-container {
+        filter: blur(5px);
+    }
+
+    .image-container:hover {
+        filter: blur(0px);
+    }
+}
+
+
+/* Contact */
+
+.form {
+    background-color: #0b1f32;
+    padding: 10px;
+    box-shadow: 3px 3px 5px black;
+    color: var(--white-font);
+}
+
+
+.nameMailBlock {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    align-items: center;
+}
+
+.gender {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#name, #email {
+    height: 30px;
+    width: 100%;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+
+    textarea {
+        height: 100px;
+        width: 100%;
+    }
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+#phoneNumber {
+    margin: 10% auto;
+}
+
+.contactLabel {
+    margin: 0 2%;
+    align-self: center;
+}
+
+/*footer*/
+
+footer {
+    padding: 40px 0;
+    border-style: solid;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        margin: 0 auto;
+    }
+}
+
+.social {
+    background-color: var(--bg-white);
+    border-radius: 10px;
+    box-shadow: none;
+    max-height: 50px;
+    max-width: 50px;
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 576px) {
+
+    h1 {
+        font-size: var(--font-s-h1);
+    }
+
+    .topnav {
+        width: 20%;
+    }
+
+    .topnav ul li {
+        font-size: var(--font-s-3);
+
+        a {
+            margin: 0;
+        }
+
+        /* Animation from https://css-tricks.com/css-link-hover-effects/ */
+
+        a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            border-radius: 4px;
+            background: rgb(255, 0, 245);
+            background: linear-gradient(90deg, rgba(255, 0, 245, 1) 0%, rgba(145, 0, 255, 1) 50%, rgba(0, 237, 255, 1) 100%);
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+        }
+
+        a:hover::before {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+    }
+
+    .picturesWithText {
+        max-width: 100%;
+    }
+
+    .overlay-text {
+        font-size: 2rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: var(--font-s-h2);
+    }
+
+    .form {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .gender {
+        height: 40px;
+    }
+
+    #name, #email {
+        height: 50px;
+    }
+
+    #message {
+        height: 200px;
+    }
+
+    .submit {
+        padding-bottom: 2%;
+    }
+
+    #submit {
+        font-size: 1rem;
+        height: 50px;
+    }
+
+    .contactMain {
+        padding-top: 0;
+    }
+
+    .divider {
+        .dot {
+            height: 10px;
+            width: 10px;
+            border-width: 2px;
+        }
+
+        .line {
+            border-width: 2px;
+            height: 5px;
+            border-radius: 50%;
+        }
+    }
+
+    /* Animation https://css-tricks.com/css-hover-effects-background-masks-3d*/
+    #submit {
+        --c: black; /* the color */
+        --b: .1em; /* border length*/
+        --d: 10px; /* the cube depth */
+
+        --_s: calc(var(--d) + var(--b));
+        color: white;
+        border: solid white;
+        border-width: var(--b) var(--b) var(--_s) var(--_s);
+        background: conic-gradient(at left var(--d) bottom var(--d),
+        #0000 90deg, rgb(255 255 255 /0.3) 0 225deg, rgb(255 255 255 /0.6) 0) border-box,
+        conic-gradient(at left var(--_s) bottom var(--_s),
+                #0000 90deg, var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b)) border-box;
+        transform: translate(calc(var(--d) / -1), var(--d));
+        clip-path: polygon(
+                var(--d) 0%,
+                var(--d) 0%,
+                100% 0%,
+                100% calc(100% - var(--d)),
+                100% calc(100% - var(--d)),
+                var(--d) calc(100% - var(--d))
+        );
+        transition: 0.5s;
+    }
+
+    #submit:hover {
+        transform: translate(0, 0);
+        clip-path: polygon(
+                0% var(--d),
+                var(--d) 0%,
+                100% 0%,
+                100% calc(100% - var(--d)),
+                calc(100% - var(--d)) 100%,
+                0% 100%
+        );
+    }
+
+    #phoneNumber {
+        width: 80%;
+    }
+}
+
+@media screen and (min-height: 1080px) {
+
+    html {
+        height: auto;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    .contactMain {
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    header {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    header ul li {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .contactHeadline {
+        font-size: 4rem;
+    }
+
+    .form {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .gender {
+        height: 80px;
+    }
+
+    #gender {
+        font-size: 2rem;
+    }
+
+    #name, #email {
+        height: 100px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #message {
+        height: 400px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #submit {
+        font-size: 2rem;
+        height: 100px;
+    }
+
+    #phoneNumber {
+        width: 80%;
+    }
+}

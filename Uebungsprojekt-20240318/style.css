@@ -1,0 +1,150 @@
+/* mobile first 576px width */
+
+/* root and body styling */
+
+:root{
+    --banner-bg-color: #226666;
+    --link-bg-color: #669999;
+    --banner-font-color: #FFFFFF;
+    --border-rad: 10px;
+}
+
+body{
+    margin: 0 auto;
+    text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* header and footer format */
+
+header, footer{
+    background-color: var(--banner-bg-color);
+    padding: 2%;
+}
+
+h1{
+    font-size: clamp(4rem, 1.204rem + 7.767vw, 8rem);
+    color: var(--banner-font-color);
+}
+h1 a{
+    font-size: clamp(4rem, 1.204rem + 7.767vw, 8rem);
+    color: black;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li a{
+    color: var(--banner-font-color);
+    font-size: clamp(2rem, 1.301rem + 1.942vw, 3rem);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--link-bg-color);
+    padding: 1%;
+    margin: 3% 10%;
+    display: inline-block;
+    width: 80%;
+    border-radius: var(--border-rad);
+}
+
+/* main format */
+
+main{
+    margin: 0 auto;
+    width: 80%;
+}
+
+article{
+    margin-bottom: 10%;
+}
+
+article img{
+    width: 100%;
+}
+
+section h3{
+    font-size: clamp(1.5rem, 0.429rem + 2.857vw, 3rem);
+    margin-bottom: 0;
+}
+
+section p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+main table{
+    width: 100%;
+    margin: 10px auto;
+}
+.tabelle{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 120%;
+}
+.forum{
+    width: 80%;
+    margin: 5% auto;
+    font-size: 1.2rem;
+}
+
+
+
+/* desktop format 1400px */
+
+@media screen and (min-width: 1400px){
+
+        /* header format */
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    li{
+        min-width: 300px;
+    }
+
+    /* main format */
+
+    article{
+        display: flex;
+        align-items: center;
+        gap: 2%;
+        margin: 2% 0;
+    }
+
+    section{
+        max-width: 60%;
+        text-align: left;
+    }
+
+    .reverse{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .picture{
+        justify-content: center;
+    }
+
+    main table{
+        margin: 10px auto;
+        font-size: 2rem;
+    }
+    .rooms{
+        font-size: clamp(1.5rem, 0.429rem + 2.857vw, 3rem);
+    }
+    .forum{
+        width: 80%;
+        margin: 5% auto;
+        font-size: 200%;
+    }
+    #name, #email, #message{
+        font-size: 80%;
+    }
+}

@@ -1,0 +1,53 @@
+Keybinds:
+
+Strg + D = duplizieren
+Strg + S = Speichern
+Strg + Z = zurück
+Strg + ALT + J = In einen container packen
+<> wird nicht gebraucht einfach kürzel eingeben und TAB drücken dann wird automatisch eingefügt
+Windows + .(punkt) = emojis
+Strg + ^ = Kommentar setzen (selbst geändert)
+
+
+ul>li*(zahl) für eine liste, funktioniert auch mit paragraph usw.
+
+
+Wichtige andere Infos:
+
+lorem# = Fülltext	# = nummer
+
+relativer Pfad: .../img/babyfoto.jpg
+absoluter Pfad: C:/User/Codersbay/Downloads/web-tutorial/web-tutorial
+
+M größe von unten nach oben -> 1em -> 16px
+
+Foto Quellen:
+	unsplash.com
+
+Font size calculator:
+	https://www.marcbacon.com/tools/clamp-calculator/
+
+Color Gradient Generator
+	https://cssgradient.io/
+
+Social-Media Icons:
+	https://www.iconfinder.com/social-media-icons
+
+Hover Effects:
+	https://codepen.io/abdelRhman345/pen/PXMmdv
+	https://css-tricks.com/css-link-hover-effects/
+
+Image Hover Effects:
+	https://codepen.io/nxworld/pen/ZYNOBZ
+
+Color Picker/Generator:
+	https://www.w3schools.com/colors/colors_picker.asp
+
+General Website Icons:
+	https://fonts.google.com/icons
+
+Css Guides:
+	https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+Ui stuff:
+	https://uiverse.io/

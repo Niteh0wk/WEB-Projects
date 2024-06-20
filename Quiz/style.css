@@ -22,6 +22,7 @@ header {
 #siteHeadline {
     font-family: Bahnschrift, serif;
     color: var(--white);
+    text-shadow: 2px 2px 1px black;
     margin: 0 auto;
     padding: 5px;
 }
@@ -30,6 +31,7 @@ header {
     margin: 0 auto;
     font-family: Bahnschrift, serif;
     color: var(--white);
+    text-shadow: 2px 2px 1px black;
     padding: 5px;
 }
 
@@ -40,7 +42,7 @@ main {
     flex-direction: column;
 }
 
-#progressHeadline, .progress{
+#progressHeadline, .progress {
     color: var(--white);
     background-color: var(--nice-purple);
     margin: 10px auto;
@@ -51,19 +53,27 @@ main {
 
 #progressHeadline {
     font-size: 1.5rem;
+    text-shadow: 2px 2px 1px black;
 }
 
 .progress {
     font-size: 1.3rem;
+    text-shadow: 2px 2px 1px black;
     animation-name: blinking;
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
 @keyframes blinking {
-    0% {color: white}
-    50% {color: #20ff00}
-    100% {color: white}
+    0% {
+        color: white
+    }
+    50% {
+        color: #20ff00
+    }
+    100% {
+        color: white
+    }
 }
 
 
@@ -101,6 +111,8 @@ label {
 #submit-answer,
 #submit-answer:focus {
     font-size: 17px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
     padding: 10px 25px;
     border-radius: 0.7rem;
     background-image: linear-gradient(#785caa, var(--nice-purple));
@@ -138,7 +150,7 @@ label {
     margin: 5%;
 }
 
-.question-button, .question-button:focus{
+.question-button, .question-button:focus {
     font-family: Bahnschrift, serif;
     font-size: 1.5rem;
     color: white;
@@ -168,6 +180,7 @@ body {
 }
 
 .popup-content {
+    width: 50%;
     margin: 0 auto;
     padding: 2%;
     border-style: solid;
@@ -188,14 +201,19 @@ body {
     }
 
     #play-again-button {
-        background-color: var(--white);
+        background-color: var(--nice-gray);
         padding: 3%;
         border-style: solid;
         border-color: var(--nice-gray);
         border-width: 5px;
         border-radius: 10px;
-        color: black;
+        color: white;
         font-family: Bahnschrift, serif;
         cursor: pointer;
+    }
+
+    #play-again-button:hover {
+        color: black;
+        background-color: white;
     }
 }

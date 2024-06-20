@@ -55,7 +55,7 @@ const questions = [
     }
 ];
 
-let currentQuestionIndex = -1; // Start with -1 to allow selecting any question initially
+let currentQuestionIndex = -1;  /*Start with -1 to allow selecting any question initially*/
 let progress = 0;
 
 const questionText = document.getElementById('question-text');
@@ -64,14 +64,16 @@ const resultText = document.getElementById('result-text');
 const submitAnswerButton = document.getElementById('submit-answer');
 const questionButtons = document.getElementsByClassName('question-button');
 
+/*Add an event-listener to each button element*/
 Array.from(questionButtons).forEach((button, index) => {
     button.addEventListener('click', () => {
-        if (!questions[index].answered) {
+        if (!questions[index].answered && (currentQuestionIndex === -1 || questions[currentQuestionIndex].answered)) {
             showQuestion(index);
         }
     });
 });
 
+/*Show all answer options for the question*/
 function showQuestion(id) {
     currentQuestionIndex = id;
     const question = questions[id];
@@ -99,7 +101,7 @@ function showQuestion(id) {
         optionsContainer.appendChild(optionElement);
     });
 
-    resultText.innerText = ''; // Reset result text
+    resultText.innerText = '';  /*Reset result text*/
 }
 
 submitAnswerButton.addEventListener('click', () => {
@@ -112,14 +114,16 @@ submitAnswerButton.addEventListener('click', () => {
             const qButton = document.getElementById((currentQuestionIndex + 1).toString());
             qButton.style.backgroundColor = 'green';
             qButton.style.color = 'black';
-            questions[currentQuestionIndex].answered = true;// Mark the question as answered
+            questions[currentQuestionIndex].answered = true; /*Mark the question as answered*/
             progress++;
             if (allQuestionsAnsweredCorrectly()) {
                 showPlayAgainPopup();
             }
             updateProgress();
+            enableQuestionButtons();  /*Re-enable all question buttons*/
         } else {
             resultText.style.textShadow = '2px 1px 1px red';
+            disableQuestionButtons();  /*Disable all question buttons on incorrect answer*/
         }
     } else {
         resultText.innerText = 'Please select an option.';
@@ -130,6 +134,7 @@ function allQuestionsAnsweredCorrectly() {
     return questions.every(question => question.answered);
 }
 
+/*Pop up to play again*/
 function showPlayAgainPopup() {
     const popup = document.createElement('div');
     popup.classList.add('popup');
@@ -147,7 +152,27 @@ function showPlayAgainPopup() {
     });
 }
 
-function updateProgress(){
+/*Updates how many questions have been answered correctly*/
+function updateProgress() {
     let showProgress = document.getElementById('progress');
     showProgress.innerText = progress + "/9";
 }
+
+/*Disable all question buttons*/
+function disableQuestionButtons() {
+    Array.from(questionButtons).forEach(button => {
+        button.disabled = true;
+    });
+}
+
+/*Enable all question buttons for unanswered questions*/
+function enableQuestionButtons() {
+    Array.from(questionButtons).forEach((button, index) => {
+        if (!questions[index].answered) {
+            button.disabled = false;
+        }
+    });
+}
+
+/*Initially enable all question buttons*/
+enableQuestionButtons();

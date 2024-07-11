@@ -1,7 +1,7 @@
 :root {
     --nice-purple: #6744a6;
     --nice-gray: #1F2937;
-    --white: #FFFFFF;
+    --white: white;
 }
 
 * {
@@ -90,6 +90,10 @@ label {
     color: var(--white);
     font-family: Bahnschrift, serif;
     text-shadow: 2px 2px 1px var(--nice-purple);
+}
+
+label:hover {
+    cursor: pointer;
 }
 
 #question-container {
@@ -216,4 +220,12 @@ body {
         color: black;
         background-color: white;
     }
+}
+
+#popup {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 50%;
+
 }

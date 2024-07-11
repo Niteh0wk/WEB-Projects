@@ -260,7 +260,7 @@ section p {
                 }
             }
         }
-    } /* animation source: https://codepen.io/abdelRhman345/pen/PXMmdv */ /* code shows faulty in verifying */
+    } /* animation source: https://codepen.io/abdelRhman345/pen/PXMmdv */
 
 /* main format */
 
@@ -308,7 +308,7 @@ section p {
         border-bottom: 0;
     }
 
-    .links { /* bitte anschauen wegen flexbox */
+    .links {
         margin-top: 4%;
         margin-bottom: 2%;
     }
